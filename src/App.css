@@ -65,7 +65,7 @@ body{
   width: 36vw;
   padding: auto;
   border: 0.2vw solid #ccc;
-  border-radius: 10px;
+  border-radius: 0.9vw;
   height: 10vw;
   font-size: 2vw;
 }
