@@ -5,7 +5,7 @@ export default async function generateHash(hash_input, sha_type) {
     let result;
     // let hash_output;
     if (hash_input === '') {
-        return null
+        return null;
     }
     else if (sha_type === 'SHA-1') {
         result = sha1(hash_input);

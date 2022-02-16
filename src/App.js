@@ -16,7 +16,6 @@ class App extends Component {
 
   inputChange = (event) => {
     this.setState({ text_input: event.target.value });
-    // this.generateResult(this.state.text_input);
     let hash_output = generateHash(event.target.value, this.state.sha_type);
     hash_output
       .then((result) => {
