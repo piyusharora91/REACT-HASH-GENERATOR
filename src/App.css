@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to left, rgb(27, 194, 152), rgb(10, 167, 179));
+}
+
+.navbar{
+  width: 100%;
+  padding: 1vw;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+.navbar h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  margin: auto;
+  color: white;
+}
+
+.navbar p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5vw;
+  margin: auto;
+  color: white;
+  
+}
+
+.navbar p:hover{
+  color: rgb(26, 4, 83);
+}
+
+.navbar a{
+  margin: auto;
+  text-decoration: none;
+  color: white;
+}
+
+.fields{
+  text-align: center;
+}
+
+.container-body{
+  margin-top: 3vw;
+  width: 100%;
+}
+
+.container-body h1{
+  font-family: 'Dancing Script', cursive;
+  color:white;
+}
+
+.container-body textarea{
+  margin-left: 3.12vw;
+  font-family: 'Lato', sans-serif;
+  width: 36vw;
+  padding: auto;
+  border: 0.2vw solid #ccc;
+  border-radius: 10px;
+  height: 10vw;
+  font-size: 2vw;
+}
+
+.fields button{
+  margin-left: 3vw;
+  margin-top: 1vw;
+  border-radius: 8px;
+  padding: 0.8vw;
+  border: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  color: white;
+  background-color: rgb(44, 100, 104);
+}
+
+
+.fields button:hover{
+  background-color: rgb(32, 175, 188);
+  cursor: pointer;
+} 
+
+.sha-type-change{
+  margin: 1vw 0vw;
+  display: inline-flex;
+}
+
+.container{
+  margin: 0vw 2vw;
+  font-size: 1.5vw;
+  color:white;
+}
+
+.container:hover{
+  cursor: pointer;
+}
+
+.radio-label{
+  margin-left: 0.5vw;
+}
+
+
+.result-container h1{
+  color: white;
+  text-align: center;
+  inline-size: 85vw;
+  overflow-wrap: break-word;
+  margin-left: 8.5vw;
+}
