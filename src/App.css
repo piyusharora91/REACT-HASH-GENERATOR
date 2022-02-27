@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: linear-gradient(to left, rgb(27, 194, 152), rgb(10, 167, 179));
+  background-image: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
 }
 
 .navbar{
@@ -111,7 +111,8 @@ body{
 .result-container h1{
   color: white;
   text-align: center;
-  inline-size: 85vw;
+  /* inline-size: 85vw; */
+  font-size: 2.2vw;
   overflow-wrap: break-word;
-  margin-left: 8.5vw;
+  margin: 1vw 8.5vw;
 }

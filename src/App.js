@@ -1,60 +1,53 @@
 import './App.css';
-import { React, Component } from 'react';
+import { React, useState } from 'react';
 import Form from './Form';
 import generateHash from './SHAGenerator';
 import TypeChangeButtons from './TypeChangeButtons';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      text_input: '',
-      result: '',
-      sha_type: 'SHA-1'
-    }
-  }
+const App = () => {
 
-  inputChange = (event) => {
-    this.setState({ text_input: event.target.value });
-    let hash_output = generateHash(event.target.value, this.state.sha_type);
+  const [text_input, setTextInput] = useState('');
+  const [result, setResult] = useState('');
+  const [sha_type, setShaType] = useState('SHA-1');
+
+
+  const updateHash = (hash_output) => {
     hash_output
       .then((result) => {
-        this.setState({ result: result.toUpperCase() });
+        setResult(result.toUpperCase());
       })
       .catch((result) => {
-        this.setState({ result: '' });
+        setResult('');
       });
   }
 
-  changeSHA = (event) => {
-    this.setState({ sha_type: event.target.value });
-    let hash_output = generateHash(this.state.text_input, event.target.value);
-    hash_output
-      .then((result) => {
-        this.setState({ result: result.toUpperCase() });
-      })
-      .catch((result) => {
-        this.setState({ result: '' });
-      });
+  const inputChange = (event) => {
+    setTextInput(event.target.value);
+    let hash_output = generateHash(event.target.value, sha_type);
+    updateHash(hash_output);
   }
 
-  render() {
-    return (
-      <div className="main-app">
-        <div className="navbar">
-          <a href="/"><h1>Hash Converter</h1></a>
-        </div>
-
-        <div className='main-app' >
-          <div className="fields">
-            <Form displayInput={this.inputChange} sha_type={this.state.sha_type} />
-            <TypeChangeButtons sha_change={this.changeSHA} />
-            <div className="result-container"><h1>{this.state.result}</h1></div>
-          </div >
-        </div>
-      </div >
-    );
+  const changeSHA = (event) => {
+    setShaType(event.target.value);
+    let hash_output = generateHash(text_input, event.target.value);
+    updateHash(hash_output);
   }
+
+  return (
+    <div className="main-app">
+      <div className="navbar">
+        <a href="/"><h1>Hash Converter</h1></a>
+      </div>
+
+      <div className='main-app' >
+        <div className="fields">
+          <Form displayInput={inputChange} sha_type={sha_type} />
+          <TypeChangeButtons sha_change={changeSHA} />
+          <div className="result-container"><h1>{result}</h1></div>
+        </div >
+      </div>
+    </div >
+  );
 }
 
 export default App;
