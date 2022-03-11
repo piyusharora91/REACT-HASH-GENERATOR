@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className="main-app">
       <div className="navbar">
-        <a href="/"><h1>Hash Converter</h1></a>
+        <h1>Hash Converter</h1>
       </div>
 
       <div className='main-app' >

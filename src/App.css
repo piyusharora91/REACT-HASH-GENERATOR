@@ -14,35 +14,22 @@ body{
 
 .navbar{
   width: 100%;
-  padding: 1vw;
+  padding: 20px;
   display: flex;
   margin: 0 auto;
   border-bottom: 2px solid black;
+  align-content: center;
 }
 
 .navbar h1{
   font-family: 'Dancing Script', cursive;
-  font-size: 5vw;
   margin: auto;
+  font-size: 60px;
   color: white;
 }
 
-.navbar p{
-  font-family: 'Dancing Script', cursive;
-  font-size: 3.5vw;
-  margin: auto;
-  color: white;
-  
-}
-
-.navbar p:hover{
-  color: rgb(26, 4, 83);
-}
-
-.navbar a{
-  margin: auto;
-  text-decoration: none;
-  color: white;
+.navbar h1:hover{
+  cursor: pointer;
 }
 
 .fields{
@@ -57,12 +44,13 @@ body{
 .container-body h1{
   font-family: 'Dancing Script', cursive;
   color:white;
+  font-size: 40px;
 }
 
 .container-body textarea{
-  margin-left: 3.12vw;
+  margin-left: 10px;
   font-family: 'Lato', sans-serif;
-  width: 36vw;
+  width: 520px;
   padding: auto;
   border: 0.2vw solid #ccc;
   border-radius: 0.9vw;
@@ -111,8 +99,61 @@ body{
 .result-container h1{
   color: white;
   text-align: center;
-  /* inline-size: 85vw; */
-  font-size: 2.2vw;
+  font-size: 30px;
   overflow-wrap: break-word;
-  margin: 1vw 8.5vw;
+  margin: 15px 100px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .navbar h1{
+    font-size: 30px;
+  }
+
+  .container-body h1{
+    font-size: 26px;
+  }
+
+  .container-body textarea{
+    margin: 0px 0px 10px 1vw;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .radio-label{
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .result-container h1{
+    font-size: 15px;
+    margin: 15px 20px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .navbar h1{
+    font-size: 50px;
+  }
+
+  .container-body h1{
+    font-size: 40px;
+  }
+
+  .container-body textarea{
+    margin: 0px 10px 10px 23px;
+    width: 500px;
+    height: 120px;
+    font-size: 30px;
+  }
+
+  .radio-label{
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .result-container h1{
+    font-size: 25px;
+    margin: 15px 50px;
+  }
 }
