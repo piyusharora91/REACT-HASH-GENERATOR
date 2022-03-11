@@ -106,7 +106,7 @@ body{
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .navbar h1{
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .container-body h1{
