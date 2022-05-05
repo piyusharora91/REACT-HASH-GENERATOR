@@ -1,159 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 
-*{
+* {
   padding: 0;
-  margin:0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-body{
-  background-image: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
+  margin: 0;
 }
 
-.navbar{
+body {
+  background: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
+}
+
+.navbar {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   margin: 0 auto;
   border-bottom: 2px solid black;
-  align-content: center;
 }
 
-.navbar h1{
+.navbar h1 {
   font-family: 'Dancing Script', cursive;
   margin: auto;
-  font-size: 60px;
+  font-size: 5vw;
   color: white;
 }
 
-.navbar h1:hover{
+.navbar h1:hover {
   cursor: pointer;
 }
 
-.fields{
+.main-app {
   text-align: center;
+  align-content: center;
 }
 
-.container-body{
+
+.container-body {
   margin-top: 3vw;
   width: 100%;
 }
 
-.container-body h1{
+.container-body h1 {
   font-family: 'Dancing Script', cursive;
-  color:white;
-  font-size: 40px;
+  color: white;
+  font-size: 2.5vw;
 }
 
-.container-body textarea{
-  margin-left: 10px;
+.container-body textarea {
   font-family: 'Lato', sans-serif;
-  width: 520px;
+  width: 43vmax;
+  height: 9vmax;
   padding: auto;
   border: 0.2vw solid #ccc;
   border-radius: 0.9vw;
-  height: 10vw;
+  font-size: 2vmax;
+}
+
+.sha-type-change {
+  margin-top: 15px;
+}
+
+.container {
+  margin: 1vw 3vw;
+  font-size: 3vmin;
+  color: white;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container input {
+  height: 2.5vmin;
+  width: 2.5vmin;
+}
+
+.result-container {
+  width: 70%;
+  margin-top: 2%;
+  position: relative;
+  left: 16%;
+}
+
+.result-container h2 {
+  color: white;
+  margin: 10px 20px;
   font-size: 2vw;
-}
-
-.fields button{
-  margin-left: 3vw;
-  margin-top: 1vw;
-  border-radius: 8px;
-  padding: 0.8vw;
-  border: 0;
-  font-weight: 600;
-  white-space: nowrap;
-  color: white;
-  background-color: rgb(44, 100, 104);
-}
-
-
-.fields button:hover{
-  background-color: rgb(32, 175, 188);
-  cursor: pointer;
-} 
-
-.sha-type-change{
-  margin: 1vw 0vw;
-  display: inline-flex;
-}
-
-.container{
-  margin: 0vw 2vw;
-  font-size: 1.5vw;
-  color:white;
-}
-
-.container:hover{
-  cursor: pointer;
-}
-
-.radio-label{
-  margin-left: 0.5vw;
-}
-
-
-.result-container h1{
-  color: white;
-  text-align: center;
-  font-size: 30px;
   overflow-wrap: break-word;
-  margin: 15px 100px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-  .navbar h1{
-    font-size: 45px;
+/* @media (min-width: 350px) {
+  .navbar h1 {
+    font-size: 8vh;
   }
 
-  .container-body h1{
-    font-size: 26px;
+  .container-body h1 {
+    font-size: 5vh;
   }
 
-  .container-body textarea{
-    margin: 0px 0px 10px 1vw;
-    width: 300px;
-    height: 80px;
-    font-size: 20px;
+  .result-container h2 {
+    font-size: 4.3vh;
   }
-
-  .radio-label{
-    margin-left: 10px;
-    font-size: 16px;
-  }
-
-  .result-container h1{
-    font-size: 19px;
-    margin: 15px 20px;
-  }
-}
-
-@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-  .navbar h1{
-    font-size: 50px;
-  }
-
-  .container-body h1{
-    font-size: 40px;
-  }
-
-  .container-body textarea{
-    margin: 0px 10px 10px 23px;
-    width: 500px;
-    height: 120px;
-    font-size: 30px;
-  }
-
-  .radio-label{
-    margin-left: 10px;
-    font-size: 20px;
-  }
-
-  .result-container h1{
-    font-size: 25px;
-    margin: 15px 50px;
-  }
-}
+} */
