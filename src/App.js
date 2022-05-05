@@ -34,16 +34,18 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="main-app">
       <div className="navbar">
         <h1>Hash Converter</h1>
       </div>
 
-      <main className='main-app' >
-        <Form displayInput={inputChange} sha_type={sha_type} />
-        <TypeChangeButtons sha_change={changeSHA} />
-        <div className="result-container"><h2>{result}</h2></div>
-      </main>
+      <div className='main-app' >
+        <div className="fields">
+          <Form displayInput={inputChange} sha_type={sha_type} />
+          <TypeChangeButtons sha_change={changeSHA} />
+          <div className="result-container"><h1>{result}</h1></div>
+        </div >
+      </div>
     </div >
   );
 }
