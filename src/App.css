@@ -74,8 +74,14 @@ body {
   justify-content: space-evenly;
 }
 
+
+.algo-type-label {
+  display: flex;
+  align-items: center;
+}
+
 .algo-type-label span {
-  font-size: 25px;
+  font-size: 5vmin;
   color: rgb(255, 255, 255);
 }
 
@@ -84,8 +90,8 @@ body {
 }
 
 input[type="radio"] {
-  height: 17px;
-  width: 17px;
+  height: 3vh;
+  width: 3vw;
 }
 
 input[type="radio"]:hover {
@@ -112,5 +118,22 @@ input[type="radio"]:hover {
 
   .sha-type-change {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .algo-type-label span {
+    font-size: 3vmin;
+  }
+
+  input[type="radio"] {
+    height: 2vh;
+    width: 2vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar h1 {
+    font-size: 45px;
   }
 }
