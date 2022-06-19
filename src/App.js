@@ -39,13 +39,11 @@ const App = () => {
         <h1>Hash Converter</h1>
       </div>
 
-      <div className='main-app' >
-        <div className="fields">
-          <Form displayInput={inputChange} sha_type={sha_type} />
-          <TypeChangeButtons sha_change={changeSHA} />
-          <div className="result-container"><h1>{result}</h1></div>
-        </div >
-      </div>
+      <div className="fields">
+        <Form displayInput={inputChange} sha_type={sha_type} />
+        <TypeChangeButtons sha_change={changeSHA} />
+        <div className="result-container"><h1>{result}</h1></div>
+      </div >
     </div >
   );
 }

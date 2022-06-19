@@ -10,11 +10,21 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
+  background: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .navbar {
   width: 100%;
+  height: max-content;
   padding: 20px;
   display: flex;
   margin: 0 auto;
@@ -34,127 +44,73 @@ body {
 }
 
 .fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+#algo-title {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
   text-align: center;
-}
-
-.container-body {
-  margin-top: 3vw;
-  width: 100%;
-}
-
-.container-body h1 {
   font-family: 'Dancing Script', cursive;
-  color: white;
-  font-size: 40px;
 }
 
-.container-body textarea {
-  margin-left: 10px;
-  font-family: 'Lato', sans-serif;
-  width: 520px;
-  padding: auto;
-  border: 0.2vw solid #ccc;
-  border-radius: 0.9vw;
-  height: 10vw;
-  font-size: 2vw;
-}
-
-.fields button {
-  margin-left: 3vw;
-  margin-top: 1vw;
-  border-radius: 8px;
-  padding: 0.8vw;
-  border: 0;
-  font-weight: 600;
-  white-space: nowrap;
-  color: white;
-  background-color: rgb(44, 100, 104);
-}
-
-
-.fields button:hover {
-  background-color: rgb(32, 175, 188);
-  cursor: pointer;
+#text-input {
+  width: 80vw;
+  height: 15vh;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 
 .sha-type-change {
-  margin: 1vw 0vw;
-  display: inline-flex;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.container {
-  margin: 0vw 2vw;
-  font-size: 1.5vw;
-  color: white;
+.algo-type-label span {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
 
-.container:hover {
+.algo-type-label:hover {
   cursor: pointer;
 }
 
-.radio-label {
-  margin-left: 0.5vw;
+input[type="radio"] {
+  height: 17px;
+  width: 17px;
 }
 
+input[type="radio"]:hover {
+  cursor: pointer;
+}
 
-.result-container h1 {
-  color: white;
+.result-container {
+  width: 90%;
+  margin-top: 30px;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 30px;
+  height: max-content;
   overflow-wrap: break-word;
-  margin: 15px 100px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .navbar h1 {
-    font-size: 45px;
+@media screen and (min-width: 1100px) {
+
+  #text-input {
+    width: 40vw;
+    height: 20vh;
   }
 
-  .container-body h1 {
-    font-size: 26px;
-  }
 
-  .container-body textarea {
-    margin: 0px 0px 10px 1vw;
-    width: 300px;
-    height: 80px;
-    font-size: 20px;
-  }
-
-  .radio-label {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-
-  .result-container h1 {
-    font-size: 19px;
-    margin: 15px 20px;
-  }
-}
-
-@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-  .navbar h1 {
-    font-size: 50px;
-  }
-
-  .container-body h1 {
-    font-size: 40px;
-  }
-
-  .container-body textarea {
-    margin: 0px 10px 10px 23px;
-    width: 500px;
-    height: 120px;
-    font-size: 30px;
-  }
-
-  .radio-label {
-    margin-left: 10px;
-    font-size: 20px;
-  }
-
-  .result-container h1 {
-    font-size: 25px;
-    margin: 15px 50px;
+  .sha-type-change {
+    width: 50%;
   }
 }
