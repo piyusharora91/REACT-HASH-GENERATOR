@@ -59,7 +59,7 @@ body {
 
 #text-input {
   width: 80vw;
-  height: 80px;
+  height: 120px;
   padding: 10px;
   margin-top: 15px;
   font-size: 25px;
@@ -128,7 +128,7 @@ input[type="radio"]:hover {
 
   #text-input {
     width: 60vw;
-    height: 120px;
+    height: 200px;
   }
 
   .algo-type-label span {
