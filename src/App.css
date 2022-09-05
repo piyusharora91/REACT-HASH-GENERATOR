@@ -19,9 +19,6 @@
   margin: auto;
   font-size: 40px;
   color: white;
-}
-
-.navbar h1:hover {
   cursor: pointer;
 }
 

@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 
 const TypeChangeButtons = ({ sha_change }) => {
     return (

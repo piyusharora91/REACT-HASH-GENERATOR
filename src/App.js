@@ -1,8 +1,9 @@
 import './App.css';
 import { React, useState } from 'react';
-import Form from './Form';
+import Form from './components/Form';
 import generateHash from './SHAGenerator';
-import TypeChangeButtons from './TypeChangeButtons';
+import NavBar from './components/NavBar/NavBar';
+import TypeChangeButtons from './components/TypeChangeButtons';
 
 const App = () => {
 
@@ -35,10 +36,7 @@ const App = () => {
 
   return (
     <div className="main-app">
-      <div className="navbar">
-        <h1>Hash Converter</h1>
-      </div>
-
+      <NavBar />
       <div className="fields">
         <Form displayInput={inputChange} sha_type={sha_type} />
         <TypeChangeButtons sha_change={changeSHA} />
