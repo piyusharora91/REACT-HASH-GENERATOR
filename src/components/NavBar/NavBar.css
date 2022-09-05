@@ -1,3 +1,20 @@
+.navbar {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    align-content: center;
+}
+
+.navbar h1 {
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
 .contact-container {
     width: 104vw;
     height: max-content;
