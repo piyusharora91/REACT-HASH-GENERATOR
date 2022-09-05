@@ -98,4 +98,13 @@
   .result-container h1 {
     font-size: 30px;
   }
+
+  .algo-type-label span {
+    font-size: 20px;
+  }
+
+  .algo-type {
+    height: 19px;
+    cursor: pointer;
+  }
 }
