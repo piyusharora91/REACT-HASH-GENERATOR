@@ -5,7 +5,6 @@ const Form = ({ displayInput, sha_type }) => {
             <form>
                 <textarea name="input_area" id="text-input"
                     onChange={displayInput}
-                    className="password-input"
                     placeholder="Input Text HERE" autoFocus /><br />
             </form>
         </div>
