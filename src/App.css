@@ -54,7 +54,7 @@
 
 .result-container {
   width: 90%;
-  margin-top: 30px;
+  margin-top: 15px;
   color: rgb(255, 255, 255);
   text-align: center;
   height: max-content;
@@ -90,5 +90,17 @@
   .algo-type {
     height: 19px;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #text-input {
+    width: 580px;
+    height: 140px;
+  }
+
+  .result-container {
+    width: 900px;
+    margin-top: 30px;
   }
 }
