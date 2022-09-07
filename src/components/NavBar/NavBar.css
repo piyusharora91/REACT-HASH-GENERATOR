@@ -86,3 +86,20 @@
         margin-top: 30px;
     }
 }
+
+@media screen and (max-height: 500px) {
+    .contact-container {
+        z-index: 4;
+        width: max-content;
+        height: max-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+        right: initial;
+        top: 0px;
+        left: 10px;
+    }
+
+    .social-logo {
+        margin-top: 7px;
+    }
+}
