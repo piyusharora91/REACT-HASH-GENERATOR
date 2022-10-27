@@ -10,7 +10,8 @@
 }
 
 body {
-  background: linear-gradient(to right, rgb(27, 100, 100), rgb(36, 94, 138));
+  background-image: linear-gradient(to right, rgba(153, 92, 92, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/background.png");
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Dancing Script', cursive;

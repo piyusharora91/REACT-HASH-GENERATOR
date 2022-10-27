@@ -42,7 +42,7 @@
 }
 
 .algo-type-label span {
-  font-size: 17px;
+  font-size: 21px;
   color: rgb(255, 255, 255);
   margin-left: 4px;
 }
@@ -62,7 +62,7 @@
 }
 
 .result-container h1 {
-  font-size: 22px;
+  font-size: 27px;
   font-family: Lato, sans-serif;
 }
 
@@ -77,10 +77,6 @@
 
   .sha-type-change {
     width: 480px;
-  }
-
-  .result-container h1 {
-    font-size: 30px;
   }
 
   .algo-type-label span {
