@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 70px;
 }
 
 .fields {
