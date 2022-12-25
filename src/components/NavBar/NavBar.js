@@ -7,7 +7,7 @@ const NavBar = () => {
             <nav className="contact-container">
                 <div className="nav-links" id="profile-pic">
                     <img src="https://avatars.githubusercontent.com/u/41067454?v=4" alt="Developer Profile Pic"
-                        id="profile-pic" />
+                        id="profile-pic" draggable="false" />
                 </div>
                 <div className="nav-links" id="portfolio">
                     <a href="https://piyush-arora.netlify.app/"
