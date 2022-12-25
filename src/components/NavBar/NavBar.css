@@ -37,13 +37,6 @@
     cursor: pointer;
 }
 
-#upwork-logo {
-    height: 29px;
-    width: px;
-    position: relative;
-    top: 2px;
-}
-
 .social-logo {
     font-size: 25px;
     border-radius: 50%;
@@ -58,7 +51,7 @@
 @media screen and (min-width: 530px) and (min-height: 500px) {
     .contact-container {
         width: max-content;
-        height: 380px;
+        height: 400px;
         padding: 0px 10px;
         flex-direction: column;
         justify-content: flex-start;
@@ -75,16 +68,26 @@
         margin-top: 15px;
     }
 
-    #upwork-logo {
-        height: 30px;
-        width: 30px;
-        top: 2px;
+    .social-logo {
+        margin-top: 20px;
     }
 
-    .social-logo {
-        font-size: 30px;
-        margin-top: 30px;
+    .fa-link {
+        font-size: 23.2px;
     }
+
+    .fa-twitter {
+        font-size: 25px;
+    }
+
+    .fa-github,
+    .fa-linkedin {
+        font-size: 28px;
+    }
+
+    /* .fa-linkedin {
+        font-size: 28px;
+    } */
 }
 
 @media screen and (max-height: 500px) {
